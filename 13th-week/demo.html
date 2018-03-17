@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="demo.css" rel="stylesheet">
+    <script src="demo.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <title>testFileSys</title>
+</head>
+<body>
+<form id = "myFrom" method="post" action="/">
+    <h2>Create Your Personal Account</h2>
+    <div class = "from-group">
+        <label for="username">
+            UserName
+        </label>
+        <input id = 'username' name = 'username'>
+        <p class = 'note'>This will be your username which should only contain number and letter.</p>
+    </div>
+    <div class = "from-group">
+        <label>
+            Email
+            <br>
+            <input id = "email" name="email">
+        </label>
+        <p class = 'note'>Please input valid email address.</p>
+    </div>
+    <div class = "from-group">
+        <label>
+            PhoneNumber
+            <br>
+            <input id = "phone" name="phone">
+        </label>
+        <p class = 'note'>Phone number should contain 11 numbers</p>
+    </div>
+    <div class = "from-group">
+        <label>
+            StudentNumber
+            <br>
+            <input id = "studentNumber" name="studentNumber">
+        </label>
+        <p class = 'note'>Student number should contain 8 numbers</p>
+    </div>
+    <input type="submit" id = "submitBtn" disabled = 'disabled'>
+</form>
+</body>
+</html>

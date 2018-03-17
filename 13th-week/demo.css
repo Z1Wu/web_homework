@@ -1,0 +1,91 @@
+html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+form div{
+    width: 100%;
+}
+
+.from-group {
+    margin: 15px 0;
+}
+
+.note {
+    min-height: 17px;
+    margin: 4px 0 2px;
+    font-size: 12px;
+    color: #586069;
+}
+
+input {
+    border: 1px solid #d1d5da;
+    border-radius: 3px;
+    width: 100%;
+    height: 34px;
+    max-width: 100%;
+    /*margin-right: 5px;*/
+    background-color: #fafbfc;
+}
+
+.error {
+    border: 3px solid red;
+}
+
+#submitBtn {
+    width: 50%;
+}
+
+.valid {
+    border: 3px solid green;
+}
+
+.show-user {
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.show-user p {
+    margin: 10px;
+    text-align: center;
+    border: 1px solid #d1d5da;
+    border-radius: 3px;
+    width: 300px;
+    height: 35px;
+    max-width: 100%;
+    /*margin-right: 5px;*/
+    background-color: #fafbfc;
+}
+
+.show-user button {
+    width: 100px;
+}
+
+
+
+
+
+
+
+

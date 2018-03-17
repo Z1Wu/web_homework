@@ -1,0 +1,67 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    /*border: thin solid black;*/
+}
+
+.title {
+    font-size: 200%;
+    margin-bottom: 20px;
+    margin-top: 2px;
+}
+
+.massage {
+    color: blue;
+    font-size: 200%;
+    margin-bottom: 2px;
+}
+
+.main-area {
+    margin: 0;
+    padding: 0;
+    width: 444px;
+    height: 444px;
+    position: relative;
+}
+
+.boxes {
+    background: no-repeat center;
+    background-size: 99%;
+    /*margin: 2px;*/
+    /*border: 2px solid white;*/
+    position: absolute;
+}
+
+button {
+    width: 150px;
+    height: 45px;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    font-size: 150%;
+    background-color: blue;
+}
+
+.disappear {
+    opacity: 0;
+}
+
+
+
+
+
+
+

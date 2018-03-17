@@ -1,0 +1,24 @@
+extends _layout
+
+append header
+	title Login
+	link(rel = 'stylesheet' href = 'css/customLogin.css')
+append content
+	.container
+		h1(class = 'text-center') Sign In Page
+		div(class = 'row vertical-center')
+			form#loginForm(class = 'col-lg-4 col-lg-offset-4' action = 'login' method = 'post')
+				div.form-group
+					.input-group
+						.input-group-addon
+							span(class = 'glyphicon glyphicon-user')
+						input#username(class = 'form-control' name = 'username' placeholder = 'Usernamer' required minlength = '4' maxlength = '10')
+					.err-msg(class = 'text-center font-weight-light text-danger')
+				div.form-group
+					.input-group
+						.input-group-addon
+							span(class = 'glyphicon glyphicon-lock')
+						input#password(class = 'form-control' name = 'password' placeholder = 'Password' type = "password" minlength = '4' maxlength = '10' required)
+					.err-msg(class = 'text-center font-weight-light text-danger')
+				div.form-group(class = 'text-center')
+					input#submitBtn(type = 'submit' class = 'btn btn-md btn-primary')

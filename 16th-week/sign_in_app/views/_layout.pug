@@ -1,0 +1,37 @@
+doctype html
+html
+	block header
+		head
+			meta(charset = 'utf-8')
+			link(rel = 'stylesheet' href = 'css/customLayout.css')
+			link(rel = 'stylesheet' href = 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+			script(src = '../javascript/jquery-3.2.1.min.js')
+			script(src = 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+	block content
+		body
+			div(class = "navbar navbar-default navbar-static-top" role="navigation")
+				.container
+					.navbar-header
+						a.navbar-brand(href = '/') Home Page
+					ul(class = 'nav navbar-nav navbar-right')
+						if currentUser != null
+							li
+								-let tmp = '/?username=' + currentUser;
+								a(href = tmp) #{currentUser}
+							li
+								a(href = '/logout') Logout
+						else
+							li 
+								a(href = '/regist')
+									span(class="glyphicon glyphicon-user")
+									span   SignUp
+							li
+								a(href = 'Login')
+									span(class="glyphicon glyphicon-log-in")
+									span   Login
+			each error in errors
+				.err-msg(class = 'text-center alert alert-danger fade in')= error
+					a(href="#" class="close" data-dismiss="alert" aria-label="close") &times;
+			each info in infos
+				.info-msg(class = 'text-center alert alert-info fade in')= info
+					a(href="#" class="close" data-dismiss="alert" aria-label="close") &times;

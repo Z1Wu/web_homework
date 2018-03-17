@@ -1,0 +1,50 @@
+extends _layout
+
+append header
+	link(rel = 'stylesheet' href = 'css/customRegist.css')
+	script(src = 'javascript/regist.js')
+	title regist
+append content
+	.container
+		h3(class = 'text-center') Creat Your Personal Account
+		div(class = 'row')
+			form(class = 'col-lg-4 col-lg-offset-4' id = 'myForm' method = 'post', action = '/regist')
+				div.form-group
+					.input-group
+						.input-group-addon
+							span(class = 'glyphicon glyphicon-user')
+						input#username(class = 'form-control' name = 'username' placeholder = 'Usernamer' required)
+					.err-msg(class = 'text-center font-weight-light text-danger')
+				div.form-group
+					.input-group
+						.input-group-addon
+							span(class = 'glyphicon glyphicon-lock')
+						input#password(class = 'form-control' name = 'password' placeholder = 'Password' type = "password" required)
+					.err-msg(class = 'text-center font-weight-light text-danger')
+				div.form-group
+					.input-group
+						.input-group-addon
+							span(class = 'glyphicon glyphicon-lock')
+						input#pwConfirm(class = 'form-control' name = 'pwConfirm' placeholder = 'Confirm your password' type = "password" required)
+					.err-msg(class = 'text-center font-weight-light text-danger')
+				div.form-group
+					.input-group
+						.input-group-addon
+							span(class = 'glyphicon glyphicon-envelope')
+						input#email(class = 'form-control' name = 'email' placeholder = 'Input your Email' type = "email" required)
+					.err-msg(class = 'text-center font-weight-light text-danger')
+				div.form-group
+					.input-group
+						.input-group-addon
+							span(class = 'glyphicon glyphicon-phone')
+						input#phone(class = 'form-control' name = "phone" placeholder = 'Input your phone number' required)
+					.err-msg(class = 'text-center font-weight-light text-danger')
+				div.form-group
+					.input-group
+						.input-group-addon
+							span(class = 'glyphicon glyphicon-education')
+						input#studentNumber(class = 'form-control' name = "studentNumber" placeholder = 'Input your student number' required)
+					.err-msg(class = 'text-center font-weight-light text-danger')
+				div.form-group(class = 'text-center')
+					input#submitBtn(type = 'submit' class = 'btn btn-md btn-primary')
+					input#resetBtn(type = 'reset' class = 'btn btn-md btn-primary')

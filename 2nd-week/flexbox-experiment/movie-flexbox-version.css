@@ -1,0 +1,124 @@
+/*flexbox version*/
+/*still have some problems which are unable to be solved*/
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	background-image: url(../assets/background.png);
+	text-align: center;
+	font-family: Verdana, Tahoma, sans-serif;
+	font-size: 8pt;
+	margin: 0px;
+	padding: 0px;
+}
+
+body #banner {
+	align-self: stretch;
+	background-image: url(../assets/bannerbackground.png);
+	background-repeat: repeat-x;
+}
+
+#subTitle {
+	text-align: center;
+}
+
+body .mainContent {
+	flex-wrap: wrap;
+	width: 800px;
+	display: flex;
+	flex-direction: row-reverse;
+	border-width: 4px;
+	border-color: grey;
+	border-style: solid;
+}
+
+.mainContent .rightColumn {
+	width: 250px;
+	background-color: #A2B964;
+}
+
+.mainContent .leftColumn {
+	display:flex;
+	flex-wrap: wrap;
+	width: 550px;
+}
+
+.rightColumn dl {
+	font-family: Arial, sans-serif;
+	font-size: 8pt;
+	margin: 10px;
+	text-align: left;
+
+}
+
+.rightColumn dl dt {
+	margin-top: 1em; 
+	font-weight: bold;
+}
+
+
+.leftColumn .leftHeader {
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+	/*text-align: left;*/
+	height: 83px;
+	font-size: 8pt;
+	background-image: url(../assets/rottenbackground.png);
+	background-repeat: repeat-x;
+}
+
+.leftHeader span {
+	align-self: baseline;
+}
+
+.leftColumn .commentsColumn {
+	width : 47%;
+	margin: 1%;
+}
+
+.leftColumn .commentsColumn .comments {
+	padding: 8px;
+	overflow: hidden;
+	text-align: left;
+	align-items: flex-start; 
+	background-color: #E1D697;
+	border-width: 2px;
+	border-color: grey;
+	border-style: solid;
+	font-size : 8pt;
+	font-weight: bold;
+}
+
+.leftColumn .commentsColumn .comments img {
+	float: left;
+	margin-right: 5px;
+}
+
+.leftColumn .commentsColumn .commentators span{
+	font-style: italic;
+}
+
+.leftColumn .commentsColumn .commentators img{
+	float: left;
+}
+
+.leftColumn .commentsColumn .commentators {
+	text-align: left;
+	margin-bottom: 3em;
+}
+
+#w3links {
+	position: relative;
+	left: 460px;
+	bottom: 65px;
+}
+
+.mainContent .footer {
+	background-color: #A2B964;
+	margin-top: 0px;
+	width: 800px;
+	margin-bottom: 0px;
+	padding: 5px; 
+}

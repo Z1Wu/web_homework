@@ -1,0 +1,205 @@
+html {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.header {
+	text-align: center;
+	height: 150px;
+}
+
+.first-title {
+	margin: 0 0 12px 0;
+	font-weight: 200;
+	padding: 0;
+	font-size: 180%;
+}
+
+.description {
+	margin: 0 0 12px 0;
+	font-weight: 100;
+	font-size: 150%;
+}
+
+.tip {
+	margin-top: 0;
+	font-weight: 100;
+	font-size: 150%;
+}
+
+.maze-area {
+	position: relative;
+	width: 600px;
+	height: 360px;
+	cursor: pointer;
+}
+
+.wall {
+	background-color: rgb(238, 238, 238);
+}
+
+.maze-area div{
+	margin: 0;
+	padding: 0;
+}
+
+.maze-area .wall:hover {
+	background: red;
+}
+
+.top-left {
+	border: black solid;
+	border-width: 1px 0 0 1px;
+	position: absolute;
+	left: 0;
+	top:0;
+	width: 180px;
+	height: 60px;
+}
+
+.top-center {
+	border: black solid;
+	border-width: 1px 0 1px 0;
+	position: absolute;
+	left: 180px;
+	top:0;
+	width: 240px;
+	height: 58px;
+}
+
+.top-right {
+	border: black solid;
+	border-width: 1px 1px 0 0;
+	position: absolute;
+	left: 419px;
+	top:0;
+	width: 180px;
+	height: 60px;
+}
+
+.middle-left {
+	border: black solid;
+	border-width: 0 1px 1px 1px;
+	position: absolute;
+	left: 0;
+	top: 60px;
+	width: 179px;
+	height: 180px;
+}
+
+.middle-center {
+	border: black solid;
+	border-width: 1px 1px 0 1px;
+	position: absolute;
+	left: 240px;
+	top: 120px;
+	width: 119px;
+	height: 180px;
+}
+
+.middle-right {
+	border: black solid;
+	position: absolute;
+	border-width: 0 1px 1px 1px;
+	right: 0;
+	top: 60px;
+	width: 180px;
+	height: 180px;
+}
+
+.bottom-left {
+	border: black solid;
+	border-width: 1px 0 1px 1px;
+	position: absolute;
+	left: 0;
+	top: 300px;
+	width: 240px;
+	height: 60px;
+}
+
+.bottom-center {
+	border: black solid;
+	border-width: 0 0 1px 0;
+	position: absolute;
+	left: 240px;
+	top: 301px;
+	width: 120px;
+	height: 60px;
+}
+
+.bottom-right {
+	border: black solid;
+	border-width: 1px 1px 1px 0;
+	position: absolute;
+	left: 360px;
+	top: 300px;
+	width: 240px;
+	height: 60px;
+}
+
+.begin {
+	border: 1px solid black;
+	text-align: center;
+	font-size: 300%;
+	position: absolute;
+	top: 242px;
+	left: 0;
+	background-color: rgb(145, 255, 139);
+	width: 55px;
+	height: 55px;
+}
+
+.end {
+	border: 1px solid black;
+	text-align: center;
+	font-size: 300%;
+	position: absolute;
+	background-color: rgb(138, 131, 232);
+	top: 242px;
+	right: 0;
+	width: 55px;
+	height: 55px;
+
+}
+
+.checker {
+	position: absolute;
+	height: 60px;
+	width: 20px;
+	top: 240px;
+	right: -20px;
+	/*background-color: red;*/
+}
+
+.wall-sample {
+	border: black solid 1px;
+	padding: 0;
+	margin-left: 35%;
+	width: 120px;
+	height: 30px;
+	background-color: rgb(239, 239, 239);
+}
+
+.footer {
+	width: 600px;
+	font-weight: 100;
+}
+
+
+
+
+
+
+
+
+

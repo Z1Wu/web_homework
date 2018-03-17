@@ -1,0 +1,21 @@
+extends _layout
+
+append header
+	title UserProfile
+append content
+	.container
+		div(class = 'row')
+			h1(style = 'text-align:center') UserInfo
+			ul(class = 'list-group col-lg-4 col-lg-offset-4' style = 'text-align: center')
+				li(class = 'list-group-item list-group-item-info') 
+					strong UserName:
+					span 	#{user.username}
+				li(class = 'list-group-item list-group-item-info')
+					strong StudentNumber:
+					span 	#{user.studentNumber}
+				li(class = 'list-group-item list-group-item-info')
+					strong Email:
+					span 	#{user.email}
+				li(class = 'list-group-item list-group-item-info')
+					strong Phone:
+					span 	#{user.phone}		
